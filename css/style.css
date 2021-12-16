@@ -1,88 +1,22 @@
 * {
   font-family: "Libre Franklin", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  grid-area: nav;
-  display: inline-block;
-  background-color: white;
-  top: 0px;
-  text-align: center;
-  padding: 5px;
-  width: 100%;
-}
-header {
-  grid-area: header;
-  background-color: #111111;
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
 }
 
 body {
   background-color: #111111;
+  color: white;
+}
+header {
+  background-color: black;
 }
 
 main {
-  grid-area: main;
-  display: inline-block;
-  width: 100%;
-  background-color: #111111;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-aside {
-  grid-area: aside;
-  background-color: #bd0808;
-  border: white solid 2px;
-  padding: 10px;
-}
-
-section {
-  grid-area: section;
-  text-align: center;
-  padding: 20px;
-  margin: 20px;
-  background-color: #111111;
-  border: solid 2px white;
-}
-
-article {
-  display: inline-block;
-  background-color: #111111;
-  padding: 5px;
-  margin: 5px;
-  border: solid 2px white;
-}
-
-footer {
-  grid-area: footer;
-  width: 100%;
-  text-align: center;
-  background-color: #111111;
-  padding: 30px;
+  background-color: #3d0202;
 }
 
 div {
   text-align: center;
-  margin: 10px;
-  padding: 10 px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 10px;
-  padding-top: 20px;
-}
-
-li {
-  display: inline;
-  margin: 5px;
-  padding: 5px;
-  text-transform: uppercase;
+  padding-top: 10px;
 }
 
 h1 {
@@ -96,12 +30,12 @@ h2 {
   color: white;
   font-size: 48px;
   margin: 10px;
+  padding: 10px;
 }
 
 h3 {
   color: white;
   font-size: 36px;
-  margin: 10px;
 }
 
 h4 {
@@ -117,122 +51,48 @@ p {
   font-size: 16px;
 }
 
-.cont_nav {
+#id_header {
+  text-align: center;
+}
+
+#stitle {
   display: flex;
   justify-content: center;
 }
 
-.a_nav {
-  text-decoration: none;
-  color: black;
-  font-size: 21px;
-  font-weight: bold;
-}
-
-.a_nav:hover {
-  color: #bd0808;
-  font-size: 22px;
-}
-
-.fondo {
-  margin: 10px;
-  padding: 10px;
-}
-
-.boton {
-  margin: 30px;
-  padding: 15px;
-  border: 3px solid;
-  text-decoration: none;
-  color: #bd0808;
-  font-weight: bold;
-  background-color: #db8888;
-}
-
-.boton:hover {
+#d_aside {
   background-color: #bd0808;
-  color: #111111;
-  font-weight: bold;
+  padding: 10px;
+  margin: 0px;
 }
 
-.boton2 {
-  margin: 30px;
-  padding: 10px;
-  border: 3px solid;
-  text-decoration: none;
-  border-radius: 10px;
-  background-color: #111111;
+#d_aside2 {
+  background-color: #bd0808;
+  padding-left: -10px;
+}
+#cont_sec1 {
+  background-color: #3d0202;
+}
+#cont_sec2 {
+  background-color: #3d0202;
+}
+
+#call {
+  background-color: #242021;
   color: white;
-  margin: 10px;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
-.boton2:hover {
-  background-color: white;
-  color: #111111;
-  font-weight: bold;
-}
-
-.boton_entradas {
-  margin-top: 30px;
-  margin-left: 10px;
-  border: 3px solid;
-  text-decoration: none;
-  border-radius: 10px;
-  background-color: #111111;
-  color: white;
-  margin: 10px;
-  padding: 10px;
-}
-
-.boton_entradas:hover {
-  background-color: white;
-  color: #111111;
-  font-weight: bold;
+#d_footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
 .img_aside {
-  border-radius: 50%;
-}
-
-.article_1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #111111;
-  padding: 10px;
-  margin: 10px;
-  border: solid 2px white;
-}
-
-.call {
-  grid-area: call;
-  background-color: #242021;
-  color: white;
-  justify-content: center;
-  width: 100%;
-  margin-top: 60px;
-}
-.cont_grid {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 5% 35% 50% 10%;
-  grid-template-areas:
-    "nav nav nav nav"
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-  justify-content: space-between;
-}
-
-.cont_grid2 {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 70% 40%;
-  grid-template-areas:
-    "aside section section section"
-    "call call call call";
-  justify-content: space-between;
+  border-radius: 200%;
 }
 
 .icons {
@@ -241,273 +101,34 @@ p {
 }
 
 .icons:hover {
-  width: 32px;
-  height: 32px;
-}
-
-.aside_tour {
-  display: inline-block;
-  width: 30%;
-  height: 600px;
-  padding: 50 5 50 5;
-  padding-top: 20px;
-  margin: 5px;
-  text-align: center;
-  background-color: #111111;
-  border: white solid 2px;
-}
-
-/* INDEX*/
-.s_index {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-/* MERCH*/
-
-.h1_merch {
-  color: #bd0808;
-}
-
-.h2_merch {
-  color: #bd0808;
-}
-
-.fondo2 {
-  background-image: url(../img/fondo_merchandising.jpg);
-  background-size: cover;
-  height: 700px;
-  width: 100%;
+  width: 60px;
+  height: 60px;
 }
 
 /*TOUR*/
-
-.tick {
-  margin: -10px;
-  margin-top: -15px;
-  margin-left: -15px;
-}
-
-.aside_tour {
-  background-image: url(../img/tour\ aside1.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 93%;
+.body {
+  background-color: #242021;
 }
 
 /*DISCOGRAFIA*/
 
-.s_disc {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 1px;
-  padding-top: 20px;
+#d_aside {
+  background-color: #bd0808;
 }
 
-.cont_secdisc {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  height: 100%;
-}
-
-.a_disc {
-  height: 100%;
-}
-
-.d_disc {
-  margin: 1px;
-  padding: 2px;
-}
-
-.d_disc:hover {
-  transform: scale(1.2, 1.2);
+#d_section {
+  background-color: #3d0202;
 }
 
 /*CONTACTO*/
 
-.h2_contacto {
-  color: black;
+#d_cont {
+  background-color: rgb(102, 94, 94);
 }
 
-.fondo_contacto {
-  background-color: #111111;
-  background-size: cover;
-  height: 700px;
-  width: 100%;
-}
-
-.s_contact {
-  background-color: white;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.art_con {
-  display: flex;
-  background-color: white;
-}
-
-.form_contac {
+form {
   text-align: left;
+  background-color: #111111;
   padding: 10px;
   margin: 10px;
-}
-
-/*Medida tablet*/
-@media (max-width: 810px) {
-  nav {
-    position: relative;
-    width: 100%;
-  }
-  ul {
-    display: none;
-  }
-
-  header {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  li {
-    display: none;
-  }
-
-  h1 {
-    font-size: 56px;
-  }
-  h2 {
-    font-size: 42px;
-  }
-  h3 {
-    font-size: 28px;
-  }
-
-  .cont_grid {
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 5% 35% 50% 10%;
-    grid-template-areas:
-      "nav nav nav "
-      "header header header "
-      "main main main "
-      "footer footer footer";
-    justify-content: space-between;
-  }
-
-  .cont_grid2 {
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 33% 33% 33%;
-    grid-template-areas:
-      "aside aside aside"
-      "section section section"
-      "call call call";
-    justify-content: space-between;
-  }
-
-  .art_con {
-    display: block;
-  }
-
-  .form_contac {
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-  }
-}
-
-/*Medida Celulares*/
-
-@media (max-width: 741px) {
-  nav {
-    position: relative;
-    width: 100%;
-  }
-
-  header {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  ul {
-    display: none;
-  }
-
-  h1 {
-    font-size: 44px;
-  }
-  h2 {
-    font-size: 36px;
-  }
-  h3 {
-    font-size: 26px;
-  }
-
-  footer {
-    display: flex;
-    justify-content: stretch;
-    margin: 0;
-  }
-  .article_1 {
-    display: block;
-  }
-
-  .cont_grid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-template-areas:
-      "nav   "
-      "header "
-      "main  "
-      "footer";
-    justify-content: center;
-  }
-
-  .cont_grid2 {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-template-areas:
-      "aside  "
-      "section "
-      "call";
-    justify-content: space-between;
-  }
-
-  .banner_tour {
-    display: none;
-  }
-  .fondo {
-    height: 200px;
-    width: 350px;
-  }
-
-  .art_con {
-    display: block;
-  }
-
-  #form_contac {
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-  }
 }
