@@ -1,0 +1,89 @@
+body {
+  font-family: "Libre Franklin", sans-serif;
+  background-color: #111111;
+  color: white; }
+  body div {
+    text-align: center;
+    padding-top: 10px;
+    justify-content: center; }
+  body li {
+    color: black;
+    margin: 10px; }
+  body .h1 {
+    font-size: 62px; }
+  body h2 {
+    color: white;
+    font-size: 48px;
+    margin: 10px;
+    padding: 10px; }
+  body h3 {
+    color: white;
+    font-size: 36px; }
+  body h4 {
+    color: white; }
+  body h5 {
+    font-size: 26px; }
+  body p {
+    color: white;
+    font-size: 16px; }
+  body .boton {
+    background-color: #bd0808;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    padding: 9px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s; }
+  body .boton:hover {
+    background-color: #8b0909;
+    color: white;
+    scale: scale(1.2, 1.2); }
+  body nav .a_n {
+    color: black;
+    font-size: 21px;
+    margin: 5px;
+    text-decoration: none; }
+  body nav .a_n:hover {
+    color: #bd0808;
+    font-size: 23px;
+    font-weight: bold; }
+  body header {
+    background-color: black; }
+  body main {
+    background-color: #3d0202; }
+    body main #stitle {
+      display: flex;
+      justify-content: center; }
+    body main #cont_sec1 {
+      background-color: #3d0202; }
+    body main #cont_sec2 {
+      background-color: #3d0202; }
+    body main #d_aside {
+      background-color: #bd0808;
+      padding: 10px;
+      margin: 0px; }
+    body main #call {
+      background-color: #242021;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 30px; }
+    body main .img_aside {
+      border-radius: 200%; }
+  body footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px; }
+    body footer #d_footer {
+      display: flex;
+      justify-content: center;
+      padding: 30px; }
+    body footer .icons {
+      margin: 10px;
+      padding: 10px; }
+    body footer .icons:hover {
+      width: 60px;
+      height: 60px; }
