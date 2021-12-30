@@ -1,7 +1,17 @@
+//Variables | Paleta de colores
+
+$primario: #bd0808;
+$secundario: #3d0202;
+$Terciario: #00adef;
+$blanco: white;
+$negro: black;
+$gris1: #111111;
+$gris2: #242021;
+
 body {
   font-family: "Libre Franklin", sans-serif;
-  background-color: #111111;
-  color: white;
+  background-color: $gris1;
+  color: $blanco;
 
   div {
     text-align: center;
@@ -10,41 +20,24 @@ body {
   }
 
   li {
-    color: black;
+    color: $negro;
     margin: 10px;
+  }
+
+  p {
+    color: $blanco;
   }
 
   .h1 {
     font-size: 62px;
   }
 
-  h2 {
-    color: white;
-    font-size: 48px;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  h3 {
-    color: white;
-    font-size: 36px;
-  }
-
-  h4 {
-    color: white;
-  }
-
-  h5 {
-    font-size: 26px;
-  }
-
-  p {
-    color: white;
-    font-size: 16px;
+  .h2 {
+    font-size: 55px;
   }
 
   .boton {
-    background-color: #bd0808;
+    background-color: $primario;
     border: none;
     border-radius: 5%;
     color: white;
@@ -57,8 +50,8 @@ body {
   }
 
   .boton:hover {
-    background-color: #8b0909;
-    color: white;
+    background-color: $secundario;
+    color: $blanco;
     scale: scale(1.2, 1.2);
   }
 
@@ -79,36 +72,87 @@ body {
 
   header {
     background-color: black;
+    margin-bottom: 10px;
   }
 
   main {
-    background-color: #3d0202;
+    background-color: $gris1;
+    margin-bottom: -100px;
+
+    .banner_tour {
+      margin: 20px;
+      border: 1px solid black;
+    }
 
     #stitle {
       display: flex;
       justify-content: center;
     }
 
-    #cont_sec1 {
-      background-color: #3d0202;
-    }
-
-    #cont_sec2 {
-      background-color: #3d0202;
-    }
-
     #d_aside {
-      background-color: #bd0808;
+      background-color: $primario;
       padding: 10px;
       margin: 0px;
     }
 
+    #sec_form {
+      border: $blanco solid 1px;
+      padding: 5px;
+    }
+
+    @mixin cont_sec($colorletra, $colorFondo, $tamLetra) {
+      color: $colorletra;
+      background-color: $colorFondo;
+      font-size: $tamLetra;
+    }
+
+    #cont_sec_i {
+      @include cont_sec($blanco, $gris1, 18px);
+    }
+
+    #cont_sec_t {
+      @include cont_sec($blanco, $Terciario, 21px);
+    }
+
+    #cont_sec_d {
+      @include cont_sec($negro, $secundario, 16px);
+      margin-top: -10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+
+    #cont_sec_m {
+      @include cont_sec($negro, $secundario, 16px);
+      margin-top: -10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+
+    #cont_sec_c {
+      @include cont_sec($blanco, $gris1, 18px);
+    }
+
     #call {
-      background-color: #242021;
-      color: white;
+      background-color: $gris2;
+      color: $blanco;
       display: flex;
       justify-content: center;
-      padding: 30px;
+    }
+
+    #call_t {
+      @extend #call;
+    }
+
+    #call_d {
+      @extend #call;
+    }
+
+    #call_m {
+      @extend #call;
+    }
+
+    #call_c {
+      @extend #call;
     }
 
     .img_aside {
@@ -120,6 +164,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 30px;
+    background-color: $gris1;
 
     #d_footer {
       display: flex;
@@ -135,6 +180,19 @@ body {
     .icons:hover {
       width: 60px;
       height: 60px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .h1 {
+      font-size: 42px;
+    }
+
+    .h2 {
+      font-size: 38px;
+    }
+    #img_aside {
+      display: none;
     }
   }
 }

@@ -9,23 +9,12 @@ body {
   body li {
     color: black;
     margin: 10px; }
+  body p {
+    color: white; }
   body .h1 {
     font-size: 62px; }
-  body h2 {
-    color: white;
-    font-size: 48px;
-    margin: 10px;
-    padding: 10px; }
-  body h3 {
-    color: white;
-    font-size: 36px; }
-  body h4 {
-    color: white; }
-  body h5 {
-    font-size: 26px; }
-  body p {
-    color: white;
-    font-size: 16px; }
+  body .h2 {
+    font-size: 55px; }
   body .boton {
     background-color: #bd0808;
     border: none;
@@ -38,7 +27,7 @@ body {
     font-size: 16px;
     transition-duration: 0.4s; }
   body .boton:hover {
-    background-color: #8b0909;
+    background-color: #3d0202;
     color: white;
     scale: scale(1.2, 1.2); }
   body nav .a_n {
@@ -51,32 +40,62 @@ body {
     font-size: 23px;
     font-weight: bold; }
   body header {
-    background-color: black; }
+    background-color: black;
+    margin-bottom: 10px; }
   body main {
-    background-color: #3d0202; }
+    background-color: #111111;
+    margin-bottom: -100px; }
+    body main .banner_tour {
+      margin: 20px;
+      border: 1px solid black; }
     body main #stitle {
       display: flex;
       justify-content: center; }
-    body main #cont_sec1 {
-      background-color: #3d0202; }
-    body main #cont_sec2 {
-      background-color: #3d0202; }
     body main #d_aside {
       background-color: #bd0808;
       padding: 10px;
       margin: 0px; }
-    body main #call {
+    body main #sec_form {
+      border: white solid 1px;
+      padding: 5px; }
+    body main #cont_sec_i {
+      color: white;
+      background-color: #111111;
+      font-size: 18px; }
+    body main #cont_sec_t {
+      color: white;
+      background-color: #00adef;
+      font-size: 21px; }
+    body main #cont_sec_d {
+      color: black;
+      background-color: #3d0202;
+      font-size: 16px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px; }
+    body main #cont_sec_m {
+      color: black;
+      background-color: #3d0202;
+      font-size: 16px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px; }
+    body main #cont_sec_c {
+      color: white;
+      background-color: #111111;
+      font-size: 18px; }
+    body main #call, body main #call_t, body main #call_d, body main #call_m, body main #call_c {
       background-color: #242021;
       color: white;
       display: flex;
-      justify-content: center;
-      padding: 30px; }
+      justify-content: center; }
     body main .img_aside {
       border-radius: 200%; }
   body footer {
     display: flex;
     justify-content: center;
-    padding: 30px; }
+    padding: 30px;
+    background-color: #111111; }
     body footer #d_footer {
       display: flex;
       justify-content: center;
@@ -87,3 +106,10 @@ body {
     body footer .icons:hover {
       width: 60px;
       height: 60px; }
+  @media (max-width: 550px) {
+    body .h1 {
+      font-size: 42px; }
+    body .h2 {
+      font-size: 38px; }
+    body #img_aside {
+      display: none; } }
